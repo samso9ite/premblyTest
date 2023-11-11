@@ -1,0 +1,29 @@
+{
+    "sliders": [
+        {
+            "id": 1,
+            "caption": "Rain Forest",
+            "image": "https://www.prospecthill.com/wp-content/uploads/2020/04/Prospect-Slider-1-2-2920x1600.jpg"
+        },
+        {
+            "id": 2,
+            "caption": "Beatiful Lake ",
+            "image": "https://smgreenbelt.org/wp-content/uploads/2021/07/2-turtles-2-copy.jpg"
+        },
+        {
+            "id": 3,
+            "caption": "Mount Everest",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwiRVKRSiW0dN_gsCXqutBJgawQvd0JDGpqw&usqp=CAU"
+        },
+        {
+            "id": 4,
+            "caption": "Great Shore",
+            "image": "https://www.prospecthill.com/wp-content/uploads/2020/04/Prospect-Slider-1-2-2920x1600.jpg"
+        },
+        {
+            "id": 5,
+            "caption": "Cotton Shirt",
+            "image": "https://www.prospecthill.com/wp-content/uploads/2020/04/Prospect-Slider-1-2-2920x1600.jpg"
+        }
+    ]
+  }

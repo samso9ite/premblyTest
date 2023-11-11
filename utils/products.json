@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+        "id": 1,
+        "name": "Cotton Shirt",
+        "description": "This is designed in turkey. 100% cotton",
+        "price": 19.99,
+        "image": "https://i.imgur.com/1GrakTl.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Silk Shirt",
+            "description": "This is designed in China. 100% silk",
+            "price": 30.99,
+            "image": "https://i.imgur.com/ba3tvGm.jpg"
+        },
+        {
+            "id": 3,
+            "name": " Tom Shirt",
+            "description": "This is a designed by cruise tom. An original shirt",
+            "price": 40.99,
+            "image": "https://i.imgur.com/pHQ3xT3.jpg"
+        },
+        {
+            "id": 4,
+            "name": " T Shirt",
+            "description": "This is a customized t-shirt. Limited edition",
+            "price": 40.99,
+            "image": "https://i.imgur.com/OEtK5GC_d.webp?maxwidth=520&shape=thumb&fidelity=high"
+        }
+    ]
+  }
