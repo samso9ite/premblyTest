@@ -1,11 +1,11 @@
 
-
+// This is implemented to ensure DRY principle for API Calls. 
+// It accepts 2-3 argument depending on the request method
 const generalRequest = async (url, method, formData) => {
     try{
         if(method == 'get'){
             let data = await fetch(url)
             data = await data.json()
-            console.log(data);
             return data;
             
         }else{
@@ -21,7 +21,8 @@ const generalRequest = async (url, method, formData) => {
     }
 };
 
- const apiRequest = {
+// This is an object where all our services are being called.
+const apiRequest = {
     quotes:() => generalRequest('https://quotable.io/quotes?page=1', 'get'),
     covid:() => generalRequest('https://covid19.mathdro.id/api', 'get'),
     users:() => generalRequest('https://randomuser.me/api/', 'get')

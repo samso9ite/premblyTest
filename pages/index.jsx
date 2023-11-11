@@ -9,7 +9,9 @@ export default function Home() {
   
   return (
     <>
-      <h2 className="text-center pt-5 pb-5">Shop Page  <Link href={'/cartItems'}><button className="btn btn-primary">View Cart</button></Link></h2>
+      <h2 className="text-center pt-5 pb-5">Shop Page  
+        <Link href={'/cartItems'}><button className="btn btn-primary">View Cart</button></Link>
+      </h2>
       <div class="row " >
         { 
           productsData?.products.map((productData) => (

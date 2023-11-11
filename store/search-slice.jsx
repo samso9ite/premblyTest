@@ -7,6 +7,7 @@ const searchSlice = createSlice({
         records:[...users]
     },
     reducers: {
+        // This updates the records state with the payload received
         updateRecord(state, action){
             const newRecords = action.payload
             state.records = newRecords

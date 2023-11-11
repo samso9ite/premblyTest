@@ -7,7 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 const Item = (props) => {
     const dispatch = useDispatch()
     const cart = useSelector((state) => state.cart);
-    console.log(cart.totalPrice);
     const { name, price, description, id, image } = props.product;
     
     const addToCartHandler = () => {
@@ -61,7 +60,6 @@ const Item = (props) => {
                     <div  class="btn btn-primary" onClick={addToCartHandler}>Add to cart</div>
                 </div>
             </div>
-            {/* <ToastContainer /> */}
         </>
     )
 }

@@ -6,6 +6,8 @@ const apiStatus = {
     errored: 'errored'
 }
 
+// This is a custom hook that can be reused when a request has to be made on component mount.
+// This hook returns the status of the api and also the api response data.
 const useApiCallOnMount = (service) => {
     const [status, setStatus] = useState(apiStatus.loading);
     const [data, setData] = useState(null);
@@ -20,7 +22,7 @@ const useApiCallOnMount = (service) => {
         })
     }, []);
 
-    return [status ===apiStatus.loading, data, status === apiStatus.errored];
+    return [status === apiStatus.loading, data, status === apiStatus.errored];
 }
 
 export default useApiCallOnMount;
