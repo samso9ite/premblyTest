@@ -1,10 +1,15 @@
+import { useState } from "react"
 import apiRequest from "../../APIs/ApiRequest"
 import useApiCallOnMount from "../../Hooks/useApiCallOnMount"
 import ApiStateHandler from "../../utils/ApiStateHandler"
 import Pagination from "../../utils/Pagination"
 
 const Quotes = () => {
+    const [queryData, setQueryData] = useState(null)
     const[loading, data, error] = useApiCallOnMount(() => apiRequest.quotes('1'))
+    // console.log(data);
+    // setQueryData(data)
+    console.log(queryData);
     return (
        
         <>
