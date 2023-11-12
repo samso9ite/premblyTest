@@ -2,12 +2,12 @@ import { cartActions } from "../store/cart-slice";
 import { useDispatch, useSelector } from "react-redux"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { RootState } from "../store";
 
 
-const Item:React.FC = (props) => {
+const Item:React.FC<Product> = ({name, price, description, id, image}) => {
     const dispatch = useDispatch()
-    const cart = useSelector((state) => state.cart);
-    const { name, price, description, id, image } = props.product;
+    const cart = useSelector((state:RootState) => state.cart);
     
     const addToCartHandler = () => {
         const newTotalQuantity = cart.totalQuantity + 1;
