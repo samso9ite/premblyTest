@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Item = (props) => {
+const Item:React.FC = (props) => {
     const dispatch = useDispatch()
     const cart = useSelector((state) => state.cart);
     const { name, price, description, id, image } = props.product;
@@ -52,12 +52,12 @@ const Item = (props) => {
 
     return (
         <>
-           <div class="card" style={{width:'300px'}}>
-                <img class="card-img-top" src={image} alt="Card image" />
-                <div class="card-body">
-                    <h4 class="card-title">{name} <span style={{float:'right', color:'orange'}}>#{price}</span></h4>
-                    <p class="card-text">{description}</p>
-                    <div  class="btn btn-primary" onClick={addToCartHandler}>Add to cart</div>
+           <div className="card" style={{width:'300px'}}>
+                <img className="card-img-top" src={image} alt="Card image" />
+                <div className="card-body">
+                    <h4 className="card-title">{name} <span style={{float:'right', color:'orange'}}>#{price}</span></h4>
+                    <p className="card-text">{description}</p>
+                    <div  className="btn btn-primary" onClick={addToCartHandler}>Add to cart</div>
                 </div>
             </div>
         </>

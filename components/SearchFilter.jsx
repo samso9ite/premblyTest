@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useDispatch } from "react-redux"
-import { searchActions } from "@/store/search-slice"
+import { searchActions } from "../store/search-slice"
 
 const SearchFilter = (props) => {
     const [record, setRecord] = useState(props.records)

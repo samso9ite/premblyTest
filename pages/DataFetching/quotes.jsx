@@ -1,6 +1,6 @@
-import apiRequest from "@/APIs/ApiRequest"
-import useApiCallOnMount from "@/Hooks/useApiCallOnMount"
-import ApiStateHandler from "@/utils/ApiStateHandler"
+import apiRequest from "../../APIs/ApiRequest"
+import useApiCallOnMount from "../../Hooks/useApiCallOnMount"
+import ApiStateHandler from "../../utils/ApiStateHandler"
 
 const Quotes = () => {
     const[loading, data, error] = useApiCallOnMount(apiRequest.quotes)

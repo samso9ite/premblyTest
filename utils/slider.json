@@ -2,28 +2,28 @@
     "sliders": [
         {
             "id": 1,
-            "caption": "Rain Forest",
-            "image": "https://www.prospecthill.com/wp-content/uploads/2020/04/Prospect-Slider-1-2-2920x1600.jpg"
+            "caption": "Tomato Sauce Making",
+            "image": "https://mutti-parma.com/app/uploads/sites/23/2019/09/thumb-1368-recipe-cover-desktop.jpeg"
         },
         {
             "id": 2,
-            "caption": "Beatiful Lake ",
-            "image": "https://smgreenbelt.org/wp-content/uploads/2021/07/2-turtles-2-copy.jpg"
+            "caption": "Creamy Chocolate",
+            "image": "https://proveg.com/za/wp-content/uploads/sites/7/2021/07/pexels-vie-studio-6167329-1920x850.jpg"
         },
         {
             "id": 3,
-            "caption": "Mount Everest",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwiRVKRSiW0dN_gsCXqutBJgawQvd0JDGpqw&usqp=CAU"
+            "caption": "Balance Diet Food",
+            "image": "https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/mutti-parma.com/app/uploads/2019/09/thumb-721-recipe-cover-desktop.jpeg"
         },
         {
             "id": 4,
-            "caption": "Great Shore",
-            "image": "https://www.prospecthill.com/wp-content/uploads/2020/04/Prospect-Slider-1-2-2920x1600.jpg"
+            "caption": "Sliders Burger",
+            "image": "https://www.sliders.com.pk/tf/foodoko/chinese/images/slider.jpg"
         },
         {
             "id": 5,
-            "caption": "Cotton Shirt",
-            "image": "https://www.prospecthill.com/wp-content/uploads/2020/04/Prospect-Slider-1-2-2920x1600.jpg"
+            "caption": "Samosa with the sauce",
+            "image": "https://www.chatorigali.ae/images/about-bg-f.jpg"
         }
     ]
   }

@@ -1,5 +1,5 @@
-import CartSummary from "@/components/cartSummary";
-import { cartActions } from "@/store/cart-slice";
+import CartSummary from "../components/cartSummary";
+import { cartActions } from "../store/cart-slice";
 import Link from "next/link"
 import { useDispatch, useSelector } from "react-redux"
 
