@@ -1,20 +1,26 @@
 import apiRequest from "../../APIs/ApiRequest"
 import useApiCallOnMount from "../../Hooks/useApiCallOnMount"
 import ApiStateHandler from "../../utils/ApiStateHandler"
+import Pagination from "../../utils/Pagination"
 
 const Quotes = () => {
     const[loading, data, error] = useApiCallOnMount(apiRequest.quotes)
+    console.log(data);
     return (
        
         <>
           <h2 className="text-center">Quotes</h2> 
             <ApiStateHandler loading={loading} error={error}>
                 <ul>
-                    {
-                        data?.results.map((quote) => (
-                            <li key={quote._id} >{quote.content}<b>({quote.author})</b></li>
+                    {data &&  <Pagination data={data}>
+                        {(currentPageData) =>
+                            currentPageData.map((item) => (
+                                <li key={item._id} >{item.content}<b>({item.author})</b></li>
+                                )
                             )
-                        )
+                        
+                        }
+                    </Pagination>
                     }
                 </ul>
              </ApiStateHandler>  
