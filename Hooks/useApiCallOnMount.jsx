@@ -9,6 +9,7 @@ const apiStatus = {
 // This is a custom hook that can be reused when a request has to be made on component mount.
 // This hook returns the status of the api and also the api response data.
 const useApiCallOnMount = (service) => {
+    console.log(service);
     const [status, setStatus] = useState(apiStatus.loading);
     const [data, setData] = useState(null);
     useEffect ( () => {

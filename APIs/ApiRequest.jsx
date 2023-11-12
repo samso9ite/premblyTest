@@ -23,7 +23,7 @@ const generalRequest = async (url, method, formData) => {
 
 // This is an object where all our services are being called.
 const apiRequest = {
-    quotes:() => generalRequest('https://quotable.io/quotes?page=1', 'get'),
+    quotes:(pageNumber) => generalRequest(`https://quotable.io/quotes?page=${pageNumber}`, 'get'),
     covid:() => generalRequest('https://covid19.mathdro.id/api', 'get'),
     users:() => generalRequest('https://randomuser.me/api/', 'get')
 }

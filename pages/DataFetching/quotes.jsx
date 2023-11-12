@@ -4,8 +4,7 @@ import ApiStateHandler from "../../utils/ApiStateHandler"
 import Pagination from "../../utils/Pagination"
 
 const Quotes = () => {
-    const[loading, data, error] = useApiCallOnMount(apiRequest.quotes)
-    console.log(data);
+    const[loading, data, error] = useApiCallOnMount(() => apiRequest.quotes('1'))
     return (
        
         <>
