@@ -1,7 +1,12 @@
 
 const PaginationControl = (props) => {
 
+ 
+
  const renderPageButtons = () => {
+    const active = {
+        backGroundColor:'red'
+    }
     const totalPages = props.totalPages;
     const currentPage = props.currentPage || 1;
     const visiblePageCount = 20; 
@@ -9,7 +14,7 @@ const PaginationControl = (props) => {
     if (totalPages <= visiblePageCount) {
       // If there are fewer pages than the visible page count, show all buttons
       return Array.from({ length: totalPages }).map((_, index) => (
-        <li className={`page-item ${index + 1 === currentPage ? 'active' : ''}`} key={index}>
+        <li  key={index}>
           <button onClick={() => onPageChange(index + 1)}>
             {index + 1}
           </button>
@@ -24,7 +29,7 @@ const PaginationControl = (props) => {
         i <= currentPage + Math.floor(visiblePageCount / 2))) {
           pageButtons.push(
             <li className={`page-item ${i === currentPage ? 'active' : ''}`} key={i}>
-              <button onClick={() => props.onPageChange(i)}>
+              <button className="btn btn-primary" style={{borderRadius:'0'}} onClick={() => props.onPageChange(i)}>
                 {i}
               </button>
             </li>
